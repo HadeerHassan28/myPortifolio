@@ -1,4 +1,10 @@
 /* --- MOBILE STYLES --- */
+.landing {
+  background-image: url("../../img/bg/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .landing .name {
   font-size: 48px;

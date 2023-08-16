@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import landingImage from "../../img/landing.jpeg";
+//import landingImage from "../../img/landing.jpeg";
+import bg from "../../img/bg/bg.png";
 import Draw from "../../components/Draw";
 import SocialIcons from "../../components/SocialIcons";
 
@@ -9,7 +10,7 @@ const Landing = ({ name }) => {
     landing: {
       height: "calc(100% - 93px)",
       display: "flex",
-      justifyContent: "center",
+      justifyContent: "start",
       alignItems: "center",
     },
 
@@ -42,6 +43,7 @@ const Landing = ({ name }) => {
   return (
     <section className="landing" style={styles.landing}>
       <Draw />
+
       <div className="textContainer" style={styles.textContainer}>
         <h1 className="name" style={styles.name}>
           {name}
@@ -52,7 +54,7 @@ const Landing = ({ name }) => {
             onInit={(typewriter) => {
               typewriter
                 .changeDelay(80)
-                .typeString("I'm a Software Engineer")
+                .typeString("I'm a Front-End Developer")
                 .pauseFor(1500)
                 .deleteAll()
                 .typeString("Code. ")
@@ -66,8 +68,8 @@ const Landing = ({ name }) => {
           />
         </div>
       </div>
-      <div className="image-container">
-        <motion.img
+      {/* <div className="image-container">
+          <motion.img
           className="landingImage"
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.4 }}
@@ -76,7 +78,8 @@ const Landing = ({ name }) => {
           src={landingImage}
           alt="Michael Yeates"
         />
-      </div>
+        </div> */}
+
       <SocialIcons />
     </section>
   );
