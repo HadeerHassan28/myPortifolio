@@ -1,5 +1,11 @@
 /* --- MOBILE STYLES --- */
-
+:root {
+  --primary-color: #02c4c4;
+  --text-color: #b4b1b1;
+  --secondary-text-color: #f3eded;
+  --hl-color: #02c4c4; /* Change this line to use the new color */
+  --grey: #ccc;
+}
 .about {
   display: flex;
   flex-direction: column;
@@ -71,7 +77,7 @@
 }
 
 .infoContainer a:hover {
-  color: #03fefe;
+  color: #05aeae;
 }
 
 .buttonContainer {
