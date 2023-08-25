@@ -87,9 +87,12 @@ const Project = ({
         <button className="btn" onClick={() => (window.location.href = github)}>
           GitHub Repo
         </button>
-        {/* <button className="btn" onClick={() => (window.location.href = deployed)}>
+        <button
+          className="btn"
+          onClick={() => (window.location.href = deployed)}
+        >
           Live Link
-        </button> */}
+        </button>
       </Modal>
     </motion.div>
   );
