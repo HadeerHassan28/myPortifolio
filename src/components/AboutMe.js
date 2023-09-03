@@ -22,7 +22,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
     const link = document.createElement("a");
     // link.href = resume;
     link.href =
-      "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:920130ef-6955-41ae-bc30-916687ece457";
+      "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:7f114f8d-f8da-472a-85fe-309fcca88ad6";
     link.download = "HadeerHassan-Resume.pdf";
     link.onload = () => {
       link.remove();
