@@ -11,7 +11,24 @@ const AnimatedRoutes = ({ personalDetails }) => {
 
   return (
     <Routes location={location} key={location.pathname}>
-      <Route path="/" element={<Landing name={personalDetails.name} tagline={personalDetails.tagline} />} />
+      <Route
+        path="/myPortifolio"
+        element={
+          <Landing
+            name={personalDetails.name}
+            tagline={personalDetails.tagline}
+          />
+        }
+      />
+      <Route
+        path="/"
+        element={
+          <Landing
+            name={personalDetails.name}
+            tagline={personalDetails.tagline}
+          />
+        }
+      />
       <Route
         path="/about"
         element={
@@ -28,7 +45,11 @@ const AnimatedRoutes = ({ personalDetails }) => {
       <Route
         path="/contact"
         element={
-          <Contact name={personalDetails.name} location={personalDetails.location} email={personalDetails.email} />
+          <Contact
+            name={personalDetails.name}
+            location={personalDetails.location}
+            email={personalDetails.email}
+          />
         }
       />
       <Route path="/page-not-found" element={<PageNotFound />} />
