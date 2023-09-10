@@ -117,7 +117,7 @@ const Form = () => {
       <div className="col-12 formGroup formSubmit">
         <button className="btn">
           {/* {success ? "Message Sent" : "Send Message"} */}
-          "Send Message"
+          Send Message
         </button>
       </div>
     </motion.form>
