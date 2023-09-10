@@ -1,7 +1,8 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { useState } from "react";
-
+import emailjs from "emailjs-com";
+import { toast } from "react-hot-toast";
 const Form = () => {
   const [ref, inView] = useInView({
     threshold: 0,
@@ -15,7 +16,6 @@ const Form = () => {
     email: "",
     subject: "",
     message: "",
-    access_key: process.env.REACT_APP_ACCESS_KEY,
   });
 
   const handleChange = (e) => {
@@ -25,24 +25,19 @@ const Form = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const serviceID = "service_viw3epl";
+  const templateID = "template_nlximms";
+  emailjs.init("RQviWMUW3zwvw1Z8c");
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    const data = JSON.stringify(formData);
-
-    fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: data,
-    })
-      .then((res) => res.json())
-      .then((data) => {
+    emailjs
+      .send(serviceID, templateID, formData)
+      .then((result) => {
+        console.log(result.text);
+        toast.success("thank u for contact us", { duration: 2000 });
         setSuccess(true);
         setFormData({
-          ...formData,
           name: "",
           email: "",
           subject: "",
@@ -52,7 +47,10 @@ const Form = () => {
           setSuccess(false);
         }, 3000);
       })
-      .catch((err) => console.log(err));
+      .catch((error) => {
+        console.error(error);
+        toast.error("error, please try again later", { duration: 2000 });
+      });
   };
 
   return (
@@ -63,28 +61,32 @@ const Form = () => {
       initial={{ x: "-10vw", opacity: 0 }}
       animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
-      onSubmit={handleSubmit}
+      onSubmit={sendEmail}
     >
       <h4 className="contentTitle">Message Me</h4>
-      <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
+      <div
+        className="col-12 col-md-6 formGroup"
+        style={{ display: "inline-block" }}
+      >
         <input
           type="text"
           className="formControl"
           onChange={handleChange}
           value={formData.name}
-          id="contactName"
           name="name"
           placeholder="Name"
           required
         />
       </div>
-      <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
+      <div
+        className="col-12 col-md-6 formGroup"
+        style={{ display: "inline-block" }}
+      >
         <input
           type="email"
           className="formControl"
           onChange={handleChange}
           value={formData.email}
-          id="contactEmail"
           name="email"
           placeholder="Email"
           required
@@ -96,7 +98,6 @@ const Form = () => {
           className="formControl"
           onChange={handleChange}
           value={formData.subject}
-          id="contactSubject"
           name="subject"
           placeholder="Subject"
           required
@@ -108,14 +109,16 @@ const Form = () => {
           onChange={handleChange}
           value={formData.message}
           name="message"
-          id="contactMessage"
           rows="5"
           placeholder="Message"
           required
         ></textarea>
       </div>
       <div className="col-12 formGroup formSubmit">
-        <button className="btn">{success ? "Message Sent" : "Send Message"}</button>
+        <button className="btn">
+          {/* {success ? "Message Sent" : "Send Message"} */}
+          "Send Message"
+        </button>
       </div>
     </motion.form>
   );
