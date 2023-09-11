@@ -23,7 +23,7 @@
     "title": "Blood Donation (ITI Graduation Project)",
     "image": "myPortifolio/projectImgs/blood.png",
     "technologies": "React JS | EmailJS | Bootstrap | i18n | JSON |  ",
-    "description": "Spread the awareness About Blood Types, When And How to donate,Two sides of registration for users and organizations,Users Functionality: Profile that shows specific details and edit his info, ability to announce by blood type and area, Organizations Functionality: Profile that shows specific details and edit his info, ability to announce by blood type and area, ability to announce by blood type and area, The website supports the phone calls, WhatsApp , Google Maps, and Payment for the user the and organization. The localization and the dark mode are supported.",
+    "description": "Spread the awareness About Blood Types, When And How to donate,Two sides of registration for users and organizations,Users Functionality: Profile that shows specific details and edit his info, ability to announce by blood type and area, Organizations Functionality: Profile that shows specific details and edit his info, ability to announce by blood type and area, ability to announce by blood type and area, The website supports the phone calls, WhatsApp, Google Maps, and Payment for the user the and organization.",
     "github": "https://github.com/HadeerHassan28/Blood-Donation-App ",
     "deployed": "https://www.youtube.com/watch?v=pB8La6uZSpUw",
     "bgcolor": "#6c4bf4",
