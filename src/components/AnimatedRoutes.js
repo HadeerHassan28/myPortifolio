@@ -1,4 +1,10 @@
-import { Routes, Route, useLocation, Navigate } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  useLocation,
+  Navigate,
+  HashRouter,
+} from "react-router-dom";
 
 import Landing from "../pages/landing/Landing";
 import About from "../pages/about/About";
@@ -7,10 +13,11 @@ import Contact from "../pages/contact/Contact";
 import PageNotFound from "../pages/404/PageNotFound";
 
 const AnimatedRoutes = ({ personalDetails }) => {
-  const location = useLocation();
+  //const location = useLocation();
 
   return (
-    <Routes location={location} key={location.pathname}>
+    // <Routes location={location} key={location.pathname}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Route
         path="/myPortifolio"
         element={
@@ -54,7 +61,8 @@ const AnimatedRoutes = ({ personalDetails }) => {
       />
       <Route path="/myPortifolio/page-not-found" element={<PageNotFound />} />
       <Route path="*" element={<Navigate to="/page-not-found" />} />
-    </Routes>
+      {/* </Routes> */}
+    </HashRouter>
   );
 };
 
