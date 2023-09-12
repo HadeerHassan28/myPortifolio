@@ -1,7 +1,7 @@
 [
   {
     "title": "Weather App",
-    "image": "/projectImgs/weather.png",
+    "image": "projectImgs/weather.png",
     "description": "From Khamsat, The app is displayes the current weather of the user using his location.",
     "technologies": "Angular | Weather API | Bootstrap",
     "github": "https://github.com/HadeerHassan28/WeatherApp",
@@ -11,7 +11,7 @@
   },
   {
     "title": "Glogaben",
-    "image": "/projectImgs/globagen.png",
+    "image": "projectImgs/globagen.png",
     "technologies": "React JS | EmailJS | Bootstrap | i18n | Strapi ",
     "description": " The website has 3 parts: 1- display the product and conect vis WhatsApp for more info, 2- Research and development, 3- Logistics & Customs Clearance Department. consists of 5 pages (Home, About, Research,Products,Contact us ",
     "github": "https://github.com/HadeerHassan28/globagen-project",
@@ -21,7 +21,7 @@
   },
   {
     "title": "Blood Donation (ITI Graduation Project)",
-    "image": "/projectImgs/blood.png",
+    "image": "projectImgs/blood.png",
     "technologies": "React JS | EmailJS | Bootstrap | i18n | JSON |  ",
     "description": "Spread the awareness About Blood Types, When And How to donate,Two sides of registration for users and organizations,Users Functionality: Profile that shows specific details and edit his info, ability to announce by blood type and area, Organizations Functionality: Profile that shows specific details and edit his info, ability to announce by blood type and area, ability to announce by blood type and area, The website supports the phone calls, WhatsApp, Google Maps, and Payment for the user the and organization.",
     "github": "https://github.com/HadeerHassan28/Blood-Donation-App ",
@@ -31,7 +31,7 @@
   },
   {
     "title": "Contact List (ITI)",
-    "image": "/projectImgs/contactList.png",
+    "image": "projectImgs/contactList.png",
     "technologies": "Material-UI | React Native | useAxios | UseReducer | Navigation stack | json-server ",
     "description": "Display the contact list and his details of everyone.",
     "github": "https://github.com/HadeerHassan28/ContactList_React-Native",
@@ -42,7 +42,7 @@
 
   {
     "title": "To Do List with Contact List App (ITI)",
-    "image": "myPortifolio/projectImgs/toDoListContactList.png",
+    "image": "projectImgs/toDoListContactList.png",
     "description": "Display the dotoApp navigate with contact list.",
     "technologies": "React Native | React navigation | uuid ",
     "github": "https://github.com/HadeerHassan28/ITI_ToDoList_ConatctList_React-Native",
