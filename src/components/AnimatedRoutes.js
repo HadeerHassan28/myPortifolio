@@ -13,55 +13,55 @@ import Contact from "../pages/contact/Contact";
 import PageNotFound from "../pages/404/PageNotFound";
 
 const AnimatedRoutes = ({ personalDetails }) => {
-  //const location = useLocation();
+  const location = useLocation();
 
   return (
-    // <Routes location={location} key={location.pathname}>
-    <HashRouter basename={process.env.PUBLIC_URL}>
-      <Route
-        path="/myPortifolio"
-        element={
-          <Landing
-            name={personalDetails.name}
-            tagline={personalDetails.tagline}
-          />
-        }
-      />
-      {/* <Route
-        path="/"
-        element={
-          <Landing
-            name={personalDetails.name}
-            tagline={personalDetails.tagline}
-          />
-        }
-      /> */}
-      <Route
-        path="/about"
-        element={
-          <About
-            name={personalDetails.name}
-            location={personalDetails.location}
-            email={personalDetails.email}
-            availability={personalDetails.availability}
-            brand={personalDetails.brand}
-          />
-        }
-      />
-      <Route path="/myPortifolio/portfolio" element={<Portfolio />} />
-      <Route
-        path="/myPortifolio/contact"
-        element={
-          <Contact
-            name={personalDetails.name}
-            location={personalDetails.location}
-            email={personalDetails.email}
-          />
-        }
-      />
-      <Route path="/myPortifolio/page-not-found" element={<PageNotFound />} />
-      <Route path="*" element={<Navigate to="/page-not-found" />} />
-      {/* </Routes> */}
+    <HashRouter basename="/myPortifolio">
+      <Routes location={location} key={location.pathname}>
+        {/* <Route
+          path="/myPortifolio"
+          element={
+            <Landing
+              name={personalDetails.name}
+              tagline={personalDetails.tagline}
+            />
+          }
+        /> */}
+        <Route
+          path="/"
+          element={
+            <Landing
+              name={personalDetails.name}
+              tagline={personalDetails.tagline}
+            />
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <About
+              name={personalDetails.name}
+              location={personalDetails.location}
+              email={personalDetails.email}
+              availability={personalDetails.availability}
+              brand={personalDetails.brand}
+            />
+          }
+        />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route
+          path="/contact"
+          element={
+            <Contact
+              name={personalDetails.name}
+              location={personalDetails.location}
+              email={personalDetails.email}
+            />
+          }
+        />
+        <Route path="/page-not-found" element={<PageNotFound />} />
+        <Route path="*" element={<Navigate to="/page-not-found" />} />
+      </Routes>
     </HashRouter>
   );
 };
