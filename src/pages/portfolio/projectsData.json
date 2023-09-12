@@ -1,7 +1,7 @@
 [
   {
     "title": "Weather App",
-    "image": "projectImgs/weather.png",
+    "image": "build/projectImgs/weather.png",
     "description": "From Khamsat, The app is displayes the current weather of the user using his location.",
     "technologies": "Angular | Weather API | Bootstrap",
     "github": "https://github.com/HadeerHassan28/WeatherApp",
