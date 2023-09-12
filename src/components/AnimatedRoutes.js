@@ -30,7 +30,7 @@ const AnimatedRoutes = ({ personalDetails }) => {
         }
       />
       <Route
-        path="/about"
+        path="/myPortifolio/about"
         element={
           <About
             name={personalDetails.name}
@@ -41,9 +41,9 @@ const AnimatedRoutes = ({ personalDetails }) => {
           />
         }
       />
-      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/myPortifolio/portfolio" element={<Portfolio />} />
       <Route
-        path="/contact"
+        path="/myPortifolio/contact"
         element={
           <Contact
             name={personalDetails.name}
@@ -52,7 +52,7 @@ const AnimatedRoutes = ({ personalDetails }) => {
           />
         }
       />
-      <Route path="/page-not-found" element={<PageNotFound />} />
+      <Route path="/myPortifolio/page-not-found" element={<PageNotFound />} />
       <Route path="*" element={<Navigate to="/page-not-found" />} />
     </Routes>
   );
