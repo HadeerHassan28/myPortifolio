@@ -16,7 +16,7 @@ const AnimatedRoutes = ({ personalDetails }) => {
   const location = useLocation();
 
   return (
-    <HashRouter basename="/myPortifolio">
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Routes location={location} key={location.pathname}>
         {/* <Route
           path="/myPortifolio"
