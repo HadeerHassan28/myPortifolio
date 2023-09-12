@@ -6,6 +6,7 @@ import closeMenu from "../images/close.svg";
 
 const NavLinks = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
       <button
