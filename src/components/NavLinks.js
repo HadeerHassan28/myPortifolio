@@ -20,16 +20,22 @@ const NavLinks = () => {
         )}
       </button>
       <nav className={`links ${isMenuOpen ? "open" : "closed"} `}>
-        <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
+        <NavLink to="/myPortifolio" onClick={() => setIsMenuOpen(false)}>
           Home
         </NavLink>
-        <NavLink to="/about" onClick={() => setIsMenuOpen(false)}>
+        <NavLink to="/myPortifolio/about" onClick={() => setIsMenuOpen(false)}>
           About
         </NavLink>
-        <NavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
+        <NavLink
+          to="/myPortifolio/portfolio"
+          onClick={() => setIsMenuOpen(false)}
+        >
           Portfolio
         </NavLink>
-        <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
+        <NavLink
+          to="/myPortifolio/contact"
+          onClick={() => setIsMenuOpen(false)}
+        >
           Contact
         </NavLink>
       </nav>
