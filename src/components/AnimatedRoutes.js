@@ -16,19 +16,10 @@ const AnimatedRoutes = ({ personalDetails }) => {
   const location = useLocation();
 
   return (
-    <HashRouter>
+    <>
       <Routes location={location} key={location.pathname}>
-        <Route
-          path="/myPortifolio"
-          element={
-            <Landing
-              name={personalDetails.name}
-              tagline={personalDetails.tagline}
-            />
-          }
-        />
         {/* <Route
-          path="/"
+          path="/myPortifolio"
           element={
             <Landing
               name={personalDetails.name}
@@ -37,7 +28,16 @@ const AnimatedRoutes = ({ personalDetails }) => {
           }
         /> */}
         <Route
-          path="/myPortifolio/about"
+          path="/"
+          element={
+            <Landing
+              name={personalDetails.name}
+              tagline={personalDetails.tagline}
+            />
+          }
+        />
+        <Route
+          path="/about"
           element={
             <About
               name={personalDetails.name}
@@ -48,9 +48,9 @@ const AnimatedRoutes = ({ personalDetails }) => {
             />
           }
         />
-        <Route path="/myPortifolio/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route
-          path="/myPortifolio/contact"
+          path="/contact"
           element={
             <Contact
               name={personalDetails.name}
@@ -59,10 +59,10 @@ const AnimatedRoutes = ({ personalDetails }) => {
             />
           }
         />
-        <Route path="/myPortifolio/page-not-found" element={<PageNotFound />} />
+        <Route path="/page-not-found" element={<PageNotFound />} />
         <Route path="*" element={<Navigate to="/page-not-found" />} />
       </Routes>
-    </HashRouter>
+    </>
   );
 };
 

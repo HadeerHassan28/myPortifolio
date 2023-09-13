@@ -35,7 +35,7 @@ const Landing = ({ name }) => {
       fontWeight: "700",
       marginTop: "-100px",
       paddingBottom: "28px",
-      marginLeft: "70px",
+      // marginLeft: "70px",
     },
   };
 

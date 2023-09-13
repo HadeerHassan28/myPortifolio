@@ -9,13 +9,15 @@ import "./pages/404/pageNotFound.css";
 
 import App from "./App";
 
-import { BrowserRouter } from "react-router-dom";
-
+//import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
+    <HashRouter>
       <App />
-    </BrowserRouter>
+      {/* </BrowserRouter> */}
+    </HashRouter>
   </React.StrictMode>
 );
