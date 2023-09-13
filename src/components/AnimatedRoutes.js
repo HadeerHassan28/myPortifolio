@@ -16,7 +16,7 @@ const AnimatedRoutes = ({ personalDetails }) => {
   const location = useLocation();
 
   return (
-    <HashRouter basename="/myPortifolio">
+    <HashRouter>
       <Routes location={location} key={location.pathname}>
         {/* <Route
           path="/myPortifolio"
