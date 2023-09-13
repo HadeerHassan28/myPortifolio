@@ -16,19 +16,10 @@ const AnimatedRoutes = ({ personalDetails }) => {
   const location = useLocation();
 
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename="/myPortifolio">
       <Routes location={location} key={location.pathname}>
-        <Route
-          path="/myPortifolio"
-          element={
-            <Landing
-              name={personalDetails.name}
-              tagline={personalDetails.tagline}
-            />
-          }
-        />
         {/* <Route
-          path="/"
+          path="/myPortifolio"
           element={
             <Landing
               name={personalDetails.name}
@@ -37,7 +28,16 @@ const AnimatedRoutes = ({ personalDetails }) => {
           }
         /> */}
         <Route
-          path="/myPortifolio/about"
+          path="/"
+          element={
+            <Landing
+              name={personalDetails.name}
+              tagline={personalDetails.tagline}
+            />
+          }
+        />
+        <Route
+          path="/about"
           element={
             <About
               name={personalDetails.name}
