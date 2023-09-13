@@ -18,8 +18,17 @@ const AnimatedRoutes = ({ personalDetails }) => {
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
       <Routes location={location} key={location.pathname}>
-        {/* <Route
+        <Route
           path="/myPortifolio"
+          element={
+            <Landing
+              name={personalDetails.name}
+              tagline={personalDetails.tagline}
+            />
+          }
+        />
+        {/* <Route
+          path="/"
           element={
             <Landing
               name={personalDetails.name}
@@ -28,16 +37,7 @@ const AnimatedRoutes = ({ personalDetails }) => {
           }
         /> */}
         <Route
-          path="/"
-          element={
-            <Landing
-              name={personalDetails.name}
-              tagline={personalDetails.tagline}
-            />
-          }
-        />
-        <Route
-          path="/about"
+          path="/myPortifolio/about"
           element={
             <About
               name={personalDetails.name}
