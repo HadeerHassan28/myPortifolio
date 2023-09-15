@@ -1,10 +1,4 @@
-import {
-  Routes,
-  Route,
-  useLocation,
-  Navigate,
-  HashRouter,
-} from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 
 import Landing from "../pages/landing/Landing";
 import About from "../pages/about/About";

@@ -9,7 +9,7 @@ const Form = () => {
     triggerOnce: true,
   });
 
-  const [success, setSuccess] = useState(false);
+  const [, setSuccess] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
