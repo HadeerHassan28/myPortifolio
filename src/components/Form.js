@@ -35,7 +35,7 @@ const Form = () => {
       .send(serviceID, templateID, formData)
       .then((result) => {
         console.log(result.text);
-        toast.success("thank u for contact us", { duration: 2000 });
+        toast.success("thank u for contact us", { duration: 10000 });
         setSuccess(true);
         setFormData({
           name: "",
@@ -49,7 +49,7 @@ const Form = () => {
       })
       .catch((error) => {
         console.error(error);
-        toast.error("error, please try again later", { duration: 2000 });
+        toast.error("error, please try again later", { duration: 10000 });
       });
   };
 
