@@ -12,7 +12,7 @@ const Form = () => {
   const [, setSuccess] = useState(false);
 
   const [formData, setFormData] = useState({
-    name: "",
+    from_name: "",
     email: "",
     subject: "",
     message: "",
