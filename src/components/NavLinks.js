@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import openMenu from "../img/open.svg";
-import closeMenu from "../img/close.svg";
+import openMenu from "../assests/img/open.svg";
+import closeMenu from "../assests/img/close.svg";
 
 const NavLinks = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

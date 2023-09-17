@@ -1,9 +1,9 @@
 /* --- MOBILE STYLES --- */
 .landing {
-  background-image: url("../../img/bg/bg.png");
+  background-image: url("../../assests/img/bg/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   @media (max-width: 768px) {
     background-size: contain;
     background-attachment: scroll;

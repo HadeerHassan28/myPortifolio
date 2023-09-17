@@ -10,9 +10,8 @@ const AnimatedRoutes = ({ personalDetails }) => {
   const location = useLocation();
 
   return (
-    <>
-      <Routes location={location} key={location.pathname}>
-        {/* <Route
+    <Routes location={location} key={location.pathname}>
+      {/* <Route
           path="/myPortifolio"
           element={
             <Landing
@@ -21,42 +20,41 @@ const AnimatedRoutes = ({ personalDetails }) => {
             />
           }
         /> */}
-        <Route
-          path="/"
-          element={
-            <Landing
-              name={personalDetails.name}
-              tagline={personalDetails.tagline}
-            />
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <About
-              name={personalDetails.name}
-              location={personalDetails.location}
-              email={personalDetails.email}
-              availability={personalDetails.availability}
-              brand={personalDetails.brand}
-            />
-          }
-        />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route
-          path="/contact"
-          element={
-            <Contact
-              name={personalDetails.name}
-              location={personalDetails.location}
-              email={personalDetails.email}
-            />
-          }
-        />
-        <Route path="/page-not-found" element={<PageNotFound />} />
-        <Route path="*" element={<Navigate to="/page-not-found" />} />
-      </Routes>
-    </>
+      <Route
+        path="/"
+        element={
+          <Landing
+            name={personalDetails.name}
+            tagline={personalDetails.tagline}
+          />
+        }
+      />
+      <Route
+        path="/about"
+        element={
+          <About
+            name={personalDetails.name}
+            location={personalDetails.location}
+            email={personalDetails.email}
+            availability={personalDetails.availability}
+            brand={personalDetails.brand}
+          />
+        }
+      />
+      <Route path="/portfolio" element={<Portfolio />} />
+      <Route
+        path="/contact"
+        element={
+          <Contact
+            name={personalDetails.name}
+            location={personalDetails.location}
+            email={personalDetails.email}
+          />
+        }
+      />
+      <Route path="/page-not-found" element={<PageNotFound />} />
+      <Route path="*" element={<Navigate to="/page-not-found" />} />
+    </Routes>
   );
 };
 

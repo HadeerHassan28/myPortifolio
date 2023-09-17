@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Modal from "react-modal";
 import { useState } from "react";
-import closeModal from "../img/close.svg";
+import closeModal from "../assests/img/close.svg";
 
 const Project = ({
   technologies,

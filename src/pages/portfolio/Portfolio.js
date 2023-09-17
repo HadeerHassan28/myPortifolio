@@ -1,4 +1,4 @@
-import projectData from "./projectsData.json";
+import { projectData } from "./projectsData.js";
 import Project from "../../components/Project";
 import PageHeader from "../../components/PageHeader";
 
