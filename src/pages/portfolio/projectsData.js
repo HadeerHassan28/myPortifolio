@@ -3,7 +3,19 @@ import globagen from "../../assests/projectImgs/globagen.png";
 import blood from "../../assests/projectImgs/blood.png";
 import contactList from "../../assests/projectImgs/contactList.png";
 import toDoListContactList from "../../assests/projectImgs/toDoListContactList.png";
+import eCommerce from "../../assests/projectImgs/eCommerce.png";
 export const projectData = [
+  {
+    title: "FreshCart ",
+    image: eCommerce,
+    description: "E-commerce: shop and buy  online ",
+    technologies:
+      "React JS via Vite | Bootstrap, React Slick | Axios | useAxios Hook | Formik, Yup | JWT-decode | Toast |Online Payment (stripe ) | react-detect-offline. ",
+    github: "https://github.com/HadeerHassan28/e-commerce",
+    deployed: "https://e-commerce-hadeerhassan28.vercel.app/",
+    bgcolor: "4D9208",
+    id: "1",
+  },
   {
     title: "Weather App",
     image: weather,
