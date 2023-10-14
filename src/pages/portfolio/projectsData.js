@@ -13,7 +13,7 @@ export const projectData = [
       "React JS via Vite | Bootstrap, React Slick | Axios | useAxios Hook | Formik, Yup | JWT-decode | Toast |Online Payment (stripe ) | react-detect-offline. ",
     github: "https://github.com/HadeerHassan28/e-commerce",
     deployed: "https://e-commerce-hadeerhassan28.vercel.app/",
-    bgcolor: "4D9208",
+    bgcolor: "#4D9208",
     id: "1",
   },
   {
