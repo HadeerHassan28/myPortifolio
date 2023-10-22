@@ -4,7 +4,31 @@ import blood from "../../assests/projectImgs/blood.png";
 import contactList from "../../assests/projectImgs/contactList.png";
 import toDoListContactList from "../../assests/projectImgs/toDoListContactList.png";
 import eCommerce from "../../assests/projectImgs/eCommerce.png";
+import MessengerApp from "../../assests/projectImgs/MessengerImg.png";
+import syncWeatherApp from "../../assests/projectImgs/SyncWeatherApp.png";
 export const projectData = [
+  {
+    title: "MessengerApp",
+    image: MessengerApp,
+    description:
+      "The user can signIn by Google account,enter the room name then start chatting with people in the same room.",
+    technologies: "React JS vis Vite, Firebase, Bootstrap.",
+    github: "http://rb.gy/27aup",
+    deployed: "https://syncmessengerapp.web.app/",
+    bgcolor: "#00abb3",
+    id: "1",
+  },
+  {
+    title: "Weather App",
+    image: syncWeatherApp,
+    description:
+      "Dispaly the weather once the user enters the city and the coutry names",
+    technologies: "ReactJS via Vite, Fetch method, Formaik, Yup, Bootstrap.",
+    github: "http://rb.gy/8w1zg",
+    deployed: " http://rb.gy/8w1zg",
+    bgcolor: "#df556f",
+    id: "2",
+  },
   {
     title: "FreshCart ",
     image: eCommerce,
@@ -14,7 +38,7 @@ export const projectData = [
     github: "https://github.com/HadeerHassan28/e-commerce",
     deployed: "https://e-commerce-hadeerhassan28.vercel.app/",
     bgcolor: "#4D9208",
-    id: "1",
+    id: "3",
   },
   {
     title: "Weather App",
@@ -26,7 +50,7 @@ export const projectData = [
     deployed:
       "https://drive.google.com/file/d/1lAzsWT2BpaaHQZOKHCRy6r7Vsn0Prmxh/view",
     bgcolor: "#f37737",
-    id: "1",
+    id: "4",
   },
   {
     title: "Glogaben",
@@ -37,7 +61,7 @@ export const projectData = [
     github: "https://github.com/HadeerHassan28/globagen-project",
     deployed: "https://mdyeates.github.io/weather-app/",
     bgcolor: "#29cbe0",
-    id: "2",
+    id: "5",
   },
   {
     title: "Blood Donation (ITI Graduation Project)",
@@ -48,7 +72,7 @@ export const projectData = [
     github: "https://github.com/HadeerHassan28/Blood-Donation-App ",
     deployed: "https://www.youtube.com/watch?v=pB8La6uZSpUw",
     bgcolor: "#6c4bf4",
-    id: "3",
+    id: "6",
   },
   {
     title: "Contact List (ITI)",
@@ -59,7 +83,7 @@ export const projectData = [
     github: "https://github.com/HadeerHassan28/ContactList_React-Native",
     deployed: "https://www.youtube.com/watch?v=-qIFmv9l-jk",
     bgcolor: "#f85781",
-    id: "4",
+    id: "7",
   },
 
   {
@@ -71,6 +95,6 @@ export const projectData = [
       "https://github.com/HadeerHassan28/ITI_ToDoList_ConatctList_React-Native",
     deployed: "https://www.youtube.com/watch?v=_suEt2I7oxQ",
     bgcolor: "#ffcc33",
-    id: "5",
+    id: "8",
   },
 ];
