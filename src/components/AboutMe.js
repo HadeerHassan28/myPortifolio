@@ -21,8 +21,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
     setDownloading(true);
     const link = document.createElement("a");
     // link.href = resume;
-    link.href =
-      "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:7f114f8d-f8da-472a-85fe-309fcca88ad6";
+    link.href = "http://rb.gy/27aup";
     link.download = "HadeerHassan-Resume.pdf";
     link.onload = () => {
       link.remove();
