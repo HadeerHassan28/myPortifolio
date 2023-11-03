@@ -17,7 +17,7 @@ export const projectData = [
     technologies: "React JS vis Vite, Firebase, Bootstrap.",
     github: "http://rb.gy/27aup",
     deployed: "http://rb.gy/oe2kbf",
-    bgcolor: "#0aabb3",
+    bgcolor: "#affbb3",
     id: "1",
   },
   {
