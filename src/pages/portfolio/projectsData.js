@@ -8,23 +8,36 @@ import MessengerApp from "../../assests/projectImgs/MessengerImg.png";
 import syncWeatherApp from "../../assests/projectImgs/SyncWeatherApp.png";
 import editor from "../../assests/projectImgs/ScreenSyncOnlineEditor.png";
 import resumeBuilder from "../../assests/projectImgs/ScreenshotResmueBuilder.png";
+import Dashboard from "../../assests/projectImgs/Dashboard.png";
 export const projectData = [
+  {
+    title: "Dashboard",
+    image: Dashboard,
+    description: "Display info of data using charts",
+    technologies:
+      "React JS vis Vite | MartialUI | Formaik | Yup | React Router | nivo chart | FullCalendar | React-Pro-Slider ",
+    github: "http://rb.gy/05fs31",
+    deployed: "https://youtu.be/YB2zac6s_Uk",
+    bgcolor: "#DB1F48",
+    id: "1",
+  },
   {
     title: "Editor",
     image: editor,
     description:
       "The user can signIn by Google account,enter the room name then start chatting with people in the same room.",
-    technologies: "React JS vis Vite, Firebase, Bootstrap.",
+    technologies: "React JS vis Vite | Firebase | Bootstrap.",
     github: "http://rb.gy/27aup",
     deployed: "http://rb.gy/oe2kbf",
-    bgcolor: "#affbb3",
+    bgcolor: "#F4BB44",
     id: "1",
   },
   {
     title: "Resume Builder",
     image: resumeBuilder,
     description: "Can create a simple resume and download it as a pdf file.",
-    technologies: "React JS vis Vite, NodeJS, Express, puppeteer, Bootstrap.",
+    technologies:
+      "React JS vis Vite | NodeJS | Express | puppeteer | Bootstrap.",
     github: "http://rb.gy/dbmk1g",
     deployed: "https://youtu.be/o5NWBY1-wq0",
     bgcolor: "#10abb3",
@@ -35,7 +48,7 @@ export const projectData = [
     image: MessengerApp,
     description:
       "The user can signIn by Google account,enter the room name then start chatting with people in the same room.",
-    technologies: "React JS vis Vite, Firebase, Bootstrap.",
+    technologies: "React JS vis Vite | Firebase | Bootstrap.",
     github: "http://rb.gy/27aup",
     deployed: "https://syncmessengerapp.web.app/",
     bgcolor: "#00abb3",
@@ -46,7 +59,8 @@ export const projectData = [
     image: syncWeatherApp,
     description:
       "Dispaly the weather once the user enters the city and the coutry names",
-    technologies: "ReactJS via Vite, Fetch method, Formaik, Yup, Bootstrap.",
+    technologies:
+      "ReactJS via Vite | Fetch method | Formaik | Yup | Bootstrap.",
     github: "http://rb.gy/8w1zg",
     deployed: " http://rb.gy/8w1zg",
     bgcolor: "#df556f",
