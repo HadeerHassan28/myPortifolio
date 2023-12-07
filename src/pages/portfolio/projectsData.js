@@ -8,7 +8,7 @@ import MessengerApp from "../../assests/projectImgs/MessengerImg.png";
 import syncWeatherApp from "../../assests/projectImgs/SyncWeatherApp.png";
 import editor from "../../assests/projectImgs/ScreenSyncOnlineEditor.png";
 import resumeBuilder from "../../assests/projectImgs/ScreenshotResmueBuilder.png";
-import Dashboard from "../../assests/projectImgs/Dashboard.png";
+import Dashboard from "../../assests/projectImgs/dashBoard.png";
 export const projectData = [
   {
     title: "Dashboard",
