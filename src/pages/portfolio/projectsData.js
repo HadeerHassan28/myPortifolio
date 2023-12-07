@@ -40,7 +40,7 @@ export const projectData = [
       "React JS vis Vite | NodeJS | Express | puppeteer | Bootstrap.",
     github: "http://rb.gy/dbmk1g",
     deployed: "https://youtu.be/o5NWBY1-wq0",
-    bgcolor: "#10abb3",
+    bgcolor: "#BF40BF",
     id: "3",
   },
   {
