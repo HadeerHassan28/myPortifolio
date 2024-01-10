@@ -19,7 +19,7 @@ export const projectData = [
       "React Native | Typescript | react-native-asset | react-native-linear-gradient | react-native-safe-area-context |react-native-vector-icons | zustand | immer react-native-navigation ",
     github: "http://rb.gy/sh5f5z",
     deployed: "https://youtu.be/sgwGiGJjNKo",
-    bgcolor: "#D17842",
+    bgcolor: "#6495ED",
     id: "1",
   },
   {
