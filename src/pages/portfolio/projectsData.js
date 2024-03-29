@@ -10,14 +10,15 @@ import editor from "../../assests/projectImgs/ScreenSyncOnlineEditor.png";
 import resumeBuilder from "../../assests/projectImgs/ScreenshotResmueBuilder.png";
 import Dashboard from "../../assests/projectImgs/dashBoard.png";
 import CoffeeApp from "../../assests/projectImgs/CoffeeApp.png";
+import todoList from "../../assests/projectImgs/todolist.png";
 export const projectData = [
   {
     title: "To-do List",
-    image: CoffeeApp,
+    image: todoList,
     description: "Simple to-do list App ",
     technologies:
       "Angular | Typescript | Bootsrap | ngx-toastr | uuid | json-server",
-    github: "hhttp://rb.gy/2ep5kd",
+    github: "http://rb.gy/2ep5kd",
     deployed: "https://youtu.be/__dRGu_Meqk",
     bgcolor: "#C9CC3F",
     id: "1",

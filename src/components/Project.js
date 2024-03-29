@@ -46,7 +46,7 @@ const Project = ({
       >
         <div className="textWrap col-6 d-flex flex-column justify-content-center align-items-center m-5">
           <p className="tech">
-            <em>{description}</em>
+            <em>{technologies}</em>
           </p>
           <h3 className="projectTitle">{title}</h3>
           <span className="viewWork">View Work &#8594;</span>
@@ -83,7 +83,7 @@ const Project = ({
           alt="Close"
         ></img>
         <h3 className="modalTitle">{title}</h3>
-        <p className="projectDescription">{technologies}</p>
+        <p className="projectDescription">{description}</p>
         <button className="btn" onClick={() => (window.location.href = github)}>
           GitHub Repo
         </button>
